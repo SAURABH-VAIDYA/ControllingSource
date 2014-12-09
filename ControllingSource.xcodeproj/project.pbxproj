@@ -16,7 +16,7 @@
 		091302EE1A3526A300FAE2BD /* CSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 091302ED1A3526A300FAE2BD /* CSAppDelegate.m */; };
 		091302F11A3526A300FAE2BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 091302EF1A3526A300FAE2BD /* Main.storyboard */; };
 		091302F41A3526A300FAE2BD /* ControllingSource.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 091302F21A3526A300FAE2BD /* ControllingSource.xcdatamodeld */; };
-		091302F71A3526A300FAE2BD /* CSMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 091302F61A3526A300FAE2BD /* CSMasterViewController.m */; };
+		091302F71A3526A300FAE2BD /* CSNewMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 091302F61A3526A300FAE2BD /* CSNewMasterViewController.m */; };
 		091302FA1A3526A300FAE2BD /* CSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 091302F91A3526A300FAE2BD /* CSDetailViewController.m */; };
 		091302FC1A3526A300FAE2BD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 091302FB1A3526A300FAE2BD /* Images.xcassets */; };
 		091303031A3526A300FAE2BD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091303021A3526A300FAE2BD /* XCTest.framework */; };
@@ -52,8 +52,8 @@
 		091302ED1A3526A300FAE2BD /* CSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSAppDelegate.m; sourceTree = "<group>"; };
 		091302F01A3526A300FAE2BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		091302F31A3526A300FAE2BD /* ControllingSource.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ControllingSource.xcdatamodel; sourceTree = "<group>"; };
-		091302F51A3526A300FAE2BD /* CSMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMasterViewController.h; sourceTree = "<group>"; };
-		091302F61A3526A300FAE2BD /* CSMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMasterViewController.m; sourceTree = "<group>"; };
+		091302F51A3526A300FAE2BD /* CSNewMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSNewMasterViewController.h; sourceTree = "<group>"; };
+		091302F61A3526A300FAE2BD /* CSNewMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSNewMasterViewController.m; sourceTree = "<group>"; };
 		091302F81A3526A300FAE2BD /* CSDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSDetailViewController.h; sourceTree = "<group>"; };
 		091302F91A3526A300FAE2BD /* CSDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSDetailViewController.m; sourceTree = "<group>"; };
 		091302FB1A3526A300FAE2BD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -167,8 +167,8 @@
 		0913338F1A3534A30011E3D9 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				091302F51A3526A300FAE2BD /* CSMasterViewController.h */,
-				091302F61A3526A300FAE2BD /* CSMasterViewController.m */,
+				091302F51A3526A300FAE2BD /* CSNewMasterViewController.h */,
+				091302F61A3526A300FAE2BD /* CSNewMasterViewController.m */,
 				091302F81A3526A300FAE2BD /* CSDetailViewController.h */,
 				091302F91A3526A300FAE2BD /* CSDetailViewController.m */,
 			);
@@ -293,7 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				091302FA1A3526A300FAE2BD /* CSDetailViewController.m in Sources */,
-				091302F71A3526A300FAE2BD /* CSMasterViewController.m in Sources */,
+				091302F71A3526A300FAE2BD /* CSNewMasterViewController.m in Sources */,
 				091302F41A3526A300FAE2BD /* ControllingSource.xcdatamodeld in Sources */,
 				091302EE1A3526A300FAE2BD /* CSAppDelegate.m in Sources */,
 				091302EA1A3526A300FAE2BD /* main.m in Sources */,
