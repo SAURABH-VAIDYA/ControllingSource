@@ -94,7 +94,7 @@
 		091302CF1A3526A200FAE2BD = {
 			isa = PBXGroup;
 			children = (
-				091F47431A3685EC00671CA7 /* Git-GitHub-Understanding */,
+				091C96C51A37C3550086A331 /* FileOrganization */,
 				091302E31A3526A300FAE2BD /* ControllingSource */,
 				091303091A3526A300FAE2BD /* ControllingSourceTests */,
 				091302DA1A3526A300FAE2BD /* Frameworks */,
@@ -183,6 +183,14 @@
 				091302F21A3526A300FAE2BD /* ControllingSource.xcdatamodeld */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		091C96C51A37C3550086A331 /* FileOrganization */ = {
+			isa = PBXGroup;
+			children = (
+				091F47431A3685EC00671CA7 /* Git-GitHub-Understanding */,
+			);
+			name = FileOrganization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
