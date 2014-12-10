@@ -1,0 +1,152 @@
+
+Git: its a repository and also know as version control. 2 ways to use.
+If your project supports git, you can see Repository green button under "Source Control" property of all files
+
+1) when create new project, make sure you check the "Create Git Repository on" Mac and they it will add git source control on newly created project 
+2) if you forget and already existing project is there, you can add git support throught terminal window
+
+when your project supports git, it will have a hidden directory called .git and it contain its local configuration file 
+.git/configuration under that folder
+----
+
+Git Configuration
+
+There are two file "global" and "local", global is the main file and local is under 
+
+we need to set some settings to make it work
+
+git config --global user.name "SAURABH.VAIDYA"
+git config --global user.email "saurabh.vaidya@rex.com.au"
+
+not to check what settings are there into config file 
+
+git config -l and it will display all settings we have set 
+
+if you are on the main directory on command line and you use git config -l, it will give all settings of global file
+
+Saurabh-Mac-Book-Pro:~Saurabh$ git config -l  (Global config file)
+
+now lets we have project under desktop/www/ControllingSource and it supports git, it means it has .git hidden directory
+
+Saurabh-Mac-Book-Pro:~Saurabh$ cd desktop/www/controllingsource   (From fiddler we can drag folder to terminal, it will copy that path)
+
+Saurabh-Mac-Book-Pro/ControllingSource:~Saurabh$ cd .git
+
+Saurabh-Mac-Book-Pro/ControllingSource/.git:-Saurabh$ git config -l   (Local config file)
+
+2 --------- Git on existing project without git initially
+
+Commands 
+git config -help
+
+
+first do: cd ...(Path to xcode project folder)
+
+1) git init   (it will "Initialize empty Git repository")
+2) git status (to get the current status, but currenlty there is no file under this project supports git, so we have to add                         all files that we need to give supports of git)
+3) git add . (By doing this we add all subfolders and files under git)
+4) git status  (This will list all files that support git but without initial committed)
+5) git commit -m "Initial Commit."   (Very first time we need to commit all files for initial commit)
+
+now re-open this project on xcode, we can see green button for Source Control property for all files
+
+1----------Git on new project with git supports
+
+Now every time we make changes on project, by adding new files and add code, we need to commit. it files support Source Control (git) and when we make changes it will display "M" next to it so it means it is modified and not committed yet.
+
+---------------------------------------------------------Git Hub-------------------------------------------------
+on above we just talked about local git repository that is under same project, but if we remove that project, we loose everything and so we need remote repository to share our work and to make new version. GitHub provides that support 
+
+1) we need to have an account github.com, i have one free repository (everyone can see that repository) 
+2) we can add SSH keys to make secure connection between xcode project and GitHub 
+
+we can connect xcode project and github two ways (SSH and HTTPS) 
+
+1) SSH (Public and private key to authorise user). we can check keys are already there or not on terminal 
+cd ~/.ssh if not directory or file error found, we need to create new keys 
+
+ssh-keygen -t rsa -C "your email" (email should be the same that match github account)
+
+it will create pub (public key) and private key and ask password to make it secure and where you want to save and that is file name.   i saved (MyGitHubKeys) and gives password
+
+* above commands will create MyGitHubKeys and MyGitHubKeys.pub files, open (MyGitHubKeys.pub) in any text aditor and copy everything from that file and paste it into (GitHub Account -> SSK Keys -> Add New -> Give title and paste this key)
+
+* Now create new repository on GitHub account to save our xcode project into that folder "New Repository" given name like below
+
+"SAURABh"/ControllingSource
+.Public
+ private 
+ "Create repository" -> click on this button and it gives you two link 1)Https: 2) SSH:
+ 
+ copy ssh link first now go to xcode project "Source Control" menu -> "ControllingSource - Master" -> Configure 
+ 
+ it will open another inter. go to "Remotes" middle one bottom "Add Remote" -> give title and paste ssh link and "Done"
+ 
+ when we add that link like this, it will also include under XCode-> Preferrenece -> Accounts ->Repository 
+ 
+ now "Source Control" Menu -> Push  (Now it gives "Not Remotes Found") because SSH is blocked, 
+ 
+ if you go to  XCode-> Preferrenece -> Accounts ->Repository  and try to connect SSH link it may say port 22 time out and because of that firewall and proxy settings. now you can also try on command prompt 
+ 
+ ssh -T git@github.com , it shouldn't time out, if it is time out you need to add HTTPS now
+ 
+ now copy HTTPS linke from github account and add from 'Source Control" -> config -> remotes -> add address (https not ssl)
+ 
+ again go to XCode->prefreence->Accounts->Repository and now try to connect https: connection - it may gives "Failed to connect to github 443" error this is because of the proxy settings on the company
+ 
+ 
+ now we need to bypass proxy settings on git config file to connect xcode project to github repository by 
+ 
+ git config --global http.proxy http://Saurabh%20Vaidya:rex123@172.18.XXX.XXX:8080   format is below
+ git config --gloabl http.proxy http://Username:password@proxy.ip:proxy.port  here username and password is domain username and password and that one is encoded means if you have space you should write %20 if you have @ in your password write %40 and like this 
+ 
+ now git config -l, it wil ldisplay all settings 
+ 
+ you can insert and remove settings from global or local config file by doing this
+ 
+ git config --global -e   it will open vim editor with all settings , press i to insert something and here you can add, remove line  now press "esc" to remove insert command. now to exit and save vim press (:x), you will come back to the terminal window. 
+ 
+ now go to "Source Control" menu -> push and you can see "master branch" into drop down and press "push" it will upload 
+ current project on the github repository that you created 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
