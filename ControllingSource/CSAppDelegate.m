@@ -22,6 +22,8 @@
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
     CSMasterViewController *controller = (CSMasterViewController *)navigationController.topViewController;
     controller.managedObjectContext = self.managedObjectContext;
+    int i = 10;
+    NSLog(@"Test %d",i);
     return YES;
 }
 							

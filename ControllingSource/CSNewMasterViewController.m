@@ -37,6 +37,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)TestMethod
+{
+    
+}
 - (void)insertNewObject:(id)sender
 {
     NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
