@@ -25,6 +25,7 @@
 		091303061A3526A300FAE2BD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091302E11A3526A300FAE2BD /* CoreData.framework */; };
 		0913030E1A3526A300FAE2BD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0913030C1A3526A300FAE2BD /* InfoPlist.strings */; };
 		091303101A3526A300FAE2BD /* ControllingSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0913030F1A3526A300FAE2BD /* ControllingSourceTests.m */; };
+		091C96C71A37DE6A0086A331 /* Test in Resources */ = {isa = PBXBuildFile; fileRef = 091C96C61A37DE6A0086A331 /* Test */; };
 		091F47441A3685EC00671CA7 /* Git-GitHub-Understanding in Resources */ = {isa = PBXBuildFile; fileRef = 091F47431A3685EC00671CA7 /* Git-GitHub-Understanding */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		0913030B1A3526A300FAE2BD /* ControllingSourceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ControllingSourceTests-Info.plist"; sourceTree = "<group>"; };
 		0913030D1A3526A300FAE2BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0913030F1A3526A300FAE2BD /* ControllingSourceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ControllingSourceTests.m; sourceTree = "<group>"; };
+		091C96C61A37DE6A0086A331 /* Test */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Test; sourceTree = "<group>"; };
 		091F47431A3685EC00671CA7 /* Git-GitHub-Understanding */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Git-GitHub-Understanding"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +96,7 @@
 		091302CF1A3526A200FAE2BD = {
 			isa = PBXGroup;
 			children = (
+				091C96C61A37DE6A0086A331 /* Test */,
 				091C96C51A37C3550086A331 /* FileOrganization */,
 				091302E31A3526A300FAE2BD /* ControllingSource */,
 				091303091A3526A300FAE2BD /* ControllingSourceTests */,
@@ -274,6 +277,7 @@
 				091302E81A3526A300FAE2BD /* InfoPlist.strings in Resources */,
 				091302F11A3526A300FAE2BD /* Main.storyboard in Resources */,
 				091F47441A3685EC00671CA7 /* Git-GitHub-Understanding in Resources */,
+				091C96C71A37DE6A0086A331 /* Test in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
